@@ -1,0 +1,10 @@
+@mixin background-image($image-url) {
+  background-image: url($image-url);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

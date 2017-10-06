@@ -1,0 +1,180 @@
+/* general fixes */
+.golden {
+  border-bottom: 1px solid #c0a064; }
+
+.collapsing {
+  background-color: white;
+  width: 100vw; }
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+.main__header {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+* {
+  font-family: Lato, sans-serif;
+  font-size: 16px; }
+
+@media only screen and (max-width: 767px) {
+  .small-hidden {
+    display: none; } }
+
+.main__section__heading {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #2c2a28;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+/* ----------------------
+----- COVER SECTION -----
+------------------------*/
+.main__header {
+  background-image: url("../img/cover-background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 540px; }
+
+/* navigation */
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.3s, border-bottom 0.3s; }
+
+.navbar-nav {
+  padding-left: 6px;
+  padding-right: 6px; }
+
+@media only screen and (min-width: 768px) {
+  .width-240 {
+    width: 240px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between; }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding: 0; }
+  .nav-link {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    color: rgba(44, 42, 40, 0.502); }
+    .nav-link:hover {
+      color: #2c2a28; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0; }
+  .social-icons {
+    font-size: 20px;
+    padding-left: 60px; }
+  .navbar-brand {
+    padding: 0;
+    height: auto; } }
+
+/* cover message */
+.cover__message {
+  margin: 0 auto;
+  width: auto;
+  padding-top: 35vh; }
+
+.cover__message__heading, .btn {
+  color: #c0a064;
+  font-weight: bold; }
+
+.cover__message__heading {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  margin-bottom: 22px; }
+
+.cover__message__target {
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  color: #6c6a68;
+  font-weight: 300;
+  margin-bottom: 120px; }
+
+.cover__message__button {
+  font-family: Lato, sans-serif;
+  width: 225px;
+  height: 58px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid #c0a064;
+  border-radius: 0;
+  transition: background-color 0.2s, color 0.2s; }
+  .cover__message__button:hover {
+    background-color: #c0a064;
+    color: white; }
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    text-align: center;
+    padding: 0; }
+  .brand-small {
+    margin-left: 2vw; }
+  .navbar-toggler {
+    margin-right: 2vw;
+    width: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none; }
+  .cover__message__target {
+    margin-bottom: 60px; }
+  .cover__message {
+    padding-top: 28vh; }
+  .navbar-container {
+    padding: 5px;
+    border-bottom: 1px solid #c0a064;
+    width: 100%;
+    max-width: 100%; } }
+
+/* ---------------------------
+------ SECTION RECENTS -------
+----------------------------*/
+.main__recents__images, .main__recents__image {
+  margin: 0;
+  height: 730px; }
+
+.main__recents__image img {
+  height: 100%; }
+
+.main__recents__images img {
+  height: 350px; }
+
+.goat-head {
+  margin-top: 30px; }
+
+@media only screen and (max-width: 1199px) {
+  .main__recents__images, .main__recents__image {
+    height: 600px; }
+  .main__recents__images img {
+    height: 285px;
+    width: 100%; } }
+
+@media only screen and (max-width: 991px) {
+  .main__recents__image img {
+    width: 100%; }
+  .main__recents__images, .main__recents__image, .main__recents__image img {
+    height: auto; }
+  .main__recents__images {
+    padding: 0;
+    margin-top: 30px;
+    height: 250px; }
+  .main__recents__images img {
+    height: auto; }
+  .goat-head {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 575px) {
+  .main__recents__images {
+    height: 170px; } }
