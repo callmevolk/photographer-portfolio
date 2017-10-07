@@ -13,6 +13,14 @@ $(function() {
      }
   })
   .resize();
+  
+  $(window).resize(function(){
+     var width = $(window).width();
+     if(width <= 768){
+         $(".navbar").addClass("bg-light");
+     }
+  })
+  .resize();
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
