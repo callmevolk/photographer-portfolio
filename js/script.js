@@ -13,20 +13,21 @@ $(function() {
      }
   })
   .resize();
-  
+
   $(window).resize(function(){
      var width = $(window).width();
      if(width <= 768){
          $(".navbar").addClass("bg-light");
+     } else if(width > 768) {
+       $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+
+         if (scroll >= 200) {
+             $(".navbar").addClass("bg-light").addClass("golden");
+         }
+       });
      }
   })
   .resize();
 
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 200) {
-        $(".navbar").addClass("bg-light").addClass("golden");
-    }
-})
 });
