@@ -381,3 +381,75 @@ section {
     height: 242px;
   }
 }
+
+
+/* ---------------------------
+------- SECTION CONTACT ------
+-----------------------------*/
+
+.main__contact {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+.main__contact__hr {
+  margin-bottom: 120px;
+  background-color: rgb(228, 226, 224);
+}
+
+.main__contact__field {
+  border-radius: 0;
+  border: 1px solid $black;
+  border-bottom: none;
+  padding: 15px;
+}
+
+.main__contact__field--textarea {
+  border-bottom: 1px solid $black;
+  resize: none;
+}
+
+.main__contact__button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.main__contact__message {
+  font-size: 16px;
+  font-family: $lato;
+  color: $black;
+}
+
+.main__contact__text__icons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__contact__icons {
+  color: #2c2a28;
+  font-size: 20px;
+}
+
+.instagram :hover, .instagram :active {
+  color: #8a3ab9;
+}
+
+.twitter :hover, .twitter :active {
+  color: #0084b4;
+}
+
+.facebook :hover, .facebook :active {
+  color: #3b5998;
+}
+
+.behance :hover, .behance :active {
+  color: #1769ff;
+}
