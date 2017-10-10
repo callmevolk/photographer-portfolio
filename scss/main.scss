@@ -3,6 +3,20 @@
 
 
 /* general fixes */
+.sticky {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: static;
+  background-color: transparent;
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+  background-color: #F1F1F1;
+  min-height: 0;
+}
+
 .golden {
   border-bottom: 1px solid $gold;
 }
@@ -70,8 +84,8 @@ section {
 
 @media only screen and (min-width: 768px) {
 
-  .width-240 {
-    width: 240px;
+  .width-250 {
+    width: 250px;
     font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,18 +455,18 @@ section {
   font-size: 20px;
 }
 
-.instagram :hover, .instagram :active {
+.fa-instagram :hover, .fa-instagram :active {
   color: #8a3ab9;
 }
 
-.twitter :hover, .twitter :active {
+.fa-twitter :hover, .fa-twitter :active {
   color: #0084b4;
 }
 
-.facebook :hover, .facebook :active {
+.fa-facebook :hover, .fa-facebook :active {
   color: #3b5998;
 }
 
-.behance :hover, .behance :active {
+.fa-behance :hover, .fa-behance :active {
   color: #1769ff;
 }
